@@ -8,20 +8,17 @@
     color: #243e63;
 }
 
-.nav {
-    padding-top: 32px;
-    display: flex;
-}
-
 .row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.nav__row {
+.nav__container {
     display: flex;
     justify-content: space-between;
+    padding-top: 32px;
+    display: flex;
 }
 
 .nav__logo--title {
