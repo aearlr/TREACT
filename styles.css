@@ -128,6 +128,7 @@ a {
     text-decoration: none;
     position: relative;
     color: black;
+    display: inline;
 }
 
 .nav__link--primary:hover {
@@ -178,21 +179,45 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu--open .menu__backdrop {
+    display: flex;
 }
 
 .menu__links {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .menu__link {
-    font-size: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 8px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
     color: black;
 }
 
 .menu__list {
     padding: 32px 0;
+}
+
+.menu__list--primary * {
+    color: #f7fafc;
+    padding: 12px 32px;
+    background: #6415ff;
+    border-radius: 500px;
+    border: none;
 }
 
 @media (min-width: 768px) {
