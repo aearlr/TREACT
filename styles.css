@@ -155,13 +155,14 @@ a {
 
 .btn__menu {
     background-color: transparent;
-    font-size: 40px;
+    font-size: 24px;
     text-align: center;
     border: none;
+    display: none;
     transition: all 300ms ease;
 }
 
-.btn__menu--i:hover {
+.btn__menu i:hover {
     color:#6415ff;
 }
 
@@ -184,6 +185,11 @@ a {
     justify-content: center;
     align-items: center;
     background-color: white;
+    border: 1px solid rgb(212, 209, 209);
+    border-radius: 5px;
+    margin: 24px 16px;
+    height: 400px;
+    transition: opacity 300ms ease;
 }
 
 ul {
@@ -191,7 +197,7 @@ ul {
 }
 
 .menu--open .menu__backdrop {
-    display: none;
+    display: flex;
 }
 
 .menu__links {
@@ -213,15 +219,17 @@ ul {
 }
 
 .menu__list {
-    padding: 32px 0;
+    padding: 16px 0;
 }
 
-.menu__list--primary * {
-    color: #f7fafc;
+.menu__list--primary a {
+    color: #fdfeff;
     padding: 12px 32px;
     background: #6415ff;
     border-radius: 500px;
     border: none;
+    display: flex;
+    align-items: center;
 }
 
 .menu .menu--open {
@@ -368,13 +376,6 @@ h1 {
     max-width: 100%;
     height: auto;
     display: block;
-}
-
-
-.header__img {
-  max-width: 512px;
-  height: auto;
-  display: block;
 }
 
 /* 
@@ -1378,3 +1379,147 @@ footer {
     line-height: 1;
     display: block;
  }
+
+ /* MEDIA QUERIES */
+
+
+ /* 
+ 
+ EXTRA SMALL DEVICES: @media (max-width: 570px)
+ 
+ */
+
+@media (max-width: 570px) {
+
+
+}
+
+ /* 
+ 
+ SMALL DEVICES: @media (max-width: 768px)
+ 
+ */
+
+@media (max-width: 768px) {
+    .btn__menu {
+    display: block;
+    font-size: 24px;  
+}
+
+    .nav__link, .nav__links, nav__link--primary {
+        display: none;
+    }
+
+    .row {
+        padding: 0px 48px;
+    }
+
+    section {
+        padding: 0px 32px;
+    }
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+.header__email--input {
+    width: 121%;
+    font-size: 14px;
+    padding: 20px 169px 20px 32px;
+}
+
+.header__customers--title {
+    margin-top: 34px;
+}
+
+.header__email--btn {
+    width: 153px;
+    font-size: 14px;
+}
+
+.section__title {
+    font-size: 36px;
+}
+
+.section__para {
+    font-size: 16px;
+}
+
+
+.quality__img--wrapper {
+    margin: 0 56px 0 0;
+    width: 100%;
+}
+
+.header__img {
+    padding-left: 24px;
+}
+
+#testimonials .row {
+    padding-right: 150px;
+}
+
+.testimonial__para {
+    font-size: 14px;
+}
+
+.testimonial__name, .testimonial__role {
+    display: none;
+}
+
+#testimonials .section__title {
+    font-size: 24px;
+}
+
+.testimonials__img {
+    width: 57%;
+}
+
+.start__button, .start__button:nth-child(1), .start__button:nth-child(2) {
+    margin: 16px 0px 24px 48px;
+}
+
+footer {
+    padding: 96px 64px;
+}
+
+.footer__social--link {
+    width: 32px;
+    height: 32px;
+}
+
+}
+
+ /* 
+ 
+ MEDIUM DEVICES: @media (max-width: 990px)
+ 
+ */
+
+
+@media (max-width: 990px) {
+
+
+}
+
+
+/* 
+
+LARGE DEVICES @ MAX WIDTH (1024px)
+
+*/
+
+@media (max-width: 1024px) {
+ 
+}
+ 
+ 
