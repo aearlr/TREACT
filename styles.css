@@ -1391,6 +1391,27 @@ footer {
 
 @media (max-width: 570px) {
 
+.header__email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header__email--input {
+    position: static;
+    padding: 16px 0;
+    padding-left: 32px;
+    line-height: 1.5;
+}
+
+.header__email--btn {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+
 
 }
 
@@ -1406,44 +1427,43 @@ footer {
     font-size: 24px;  
 }
 
-    .nav__link, .nav__links, nav__link--primary {
-        display: none;
+.nav__container {
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.nav__link, .nav__links {
+    display: none;
     }
 
-    .row {
-        padding: 0px 48px;
-    }
-
-    section {
-        padding: 0px 32px;
+section {
+    padding: 0px 32px;
     }
 
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
+    padding: 0px 48px;
 }
 
 h1 {
     font-size: 27px;
 }
 
-.header__email--input {
-    width: 121%;
-    font-size: 14px;
-    padding: 20px 169px 20px 32px;
+header .row {
+    flex-direction: column;
+    align-items: center;
 }
 
-.header__customers--title {
-    margin-top: 34px;
+.header__description {
+    width: 100%;
+    text-align: center;
+    display: block;
 }
 
-.header__email--btn {
-    width: 153px;
-    font-size: 14px;
+.header__email {
+    display: flex;
+    align-items: center;
 }
 
 .section__title {
@@ -1454,14 +1474,9 @@ h1 {
     font-size: 16px;
 }
 
-
 .quality__img--wrapper {
     margin: 0 56px 0 0;
     width: 100%;
-}
-
-.header__img {
-    padding-left: 24px;
 }
 
 #testimonials .row {
@@ -1483,9 +1498,16 @@ h1 {
 .testimonials__img {
     width: 57%;
 }
-
-.start__button, .start__button:nth-child(1), .start__button:nth-child(2) {
+.start__button {
     margin: 16px 0px 24px 48px;
+}
+
+.start__blob--2 {
+    right: 87px;
+}
+
+.start__blob--1 {
+    left: 120px;
 }
 
 footer {
