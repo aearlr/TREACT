@@ -39,6 +39,7 @@ button {
 }
 
 p {
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -48,10 +49,14 @@ NAVIGATION
 
 */
 
+nav {
+    padding-top: 32px;
+    display: flex;
+}
+
 .nav__container {
     display: flex;
     justify-content: space-between;
-    display: flex;
 }
 
 .nav__logo--title {
@@ -262,11 +267,10 @@ BEAUTIFUL REACT SECTION
 
 */
 
-header {
+header .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
 .container {
@@ -274,14 +278,12 @@ header {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 48px;
     color: #1a202c;
     line-height: 1.25;
 }
 
 .row {
-    display: flex;
-    align-items: flex-end;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -368,19 +370,16 @@ h1 {
 
 .header__img--wrapper {
     width: calc(100% - 40%);
-    display: flex;
-    justify-content: flex-end;
 }
 
 .header__img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 100%;
+    max-width: 768px;
 }
 
 /* 
 
-MAIN FEATURES
+FEATURES
 
 */
 
@@ -390,9 +389,6 @@ main {
 
 #features {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #features .section__para {
@@ -404,14 +400,14 @@ section {
     padding: 0 32px;
 }
 
-.container {
-    padding: 96px 0;
-}
-
-.row__narrow {
+#features .row__narrow {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1024px;
+}
+
+.row__narrow {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
@@ -445,11 +441,17 @@ h2 {
     line-height: 1.625;
 }
 
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
 .feature {
     display: flex;
     align-items: flex-start;
-    width: calc(50%);
-    margin-bottom: 32px;
+    width: calc(100% / 3);
+    padding: 32px 24px;
 }
 
 .feature__row {
@@ -475,7 +477,7 @@ h2 {
     display: flex;
     flex-direction: column;
     margin-left: 16px;
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
 .feature__title {
@@ -1204,6 +1206,11 @@ START SECTION BAR WITH TWO BUTTONS
     transition: all 300ms ease;
  }
 
+ .start__buttons {
+   display: flex;
+   justify-content: flex-end;
+ }
+
  .start__button {
     padding: 20px 40px;
     border-radius: 500px;
@@ -1237,7 +1244,7 @@ START SECTION BAR WITH TWO BUTTONS
  */
 
 footer {
-    padding: 96px 32px;
+    padding: 96px 336px;
     background-color: rgb(100, 21, 255);
     margin-bottom: -32px;
     position: relative;
