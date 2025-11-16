@@ -450,6 +450,7 @@ h2 {
 .feature {
     width: 300px;
     display: flex;
+    justify-content: center;
     padding: 24px 24px;
 }
 
