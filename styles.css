@@ -1425,6 +1425,7 @@ LARGE DEVICES @ MAX WIDTH (1024px)
 
     .header__img {
         padding-top: 32px;
+        width: 100%;
     }
 
     .header__customers {
@@ -1441,20 +1442,77 @@ LARGE DEVICES @ MAX WIDTH (1024px)
         padding-left: 32px;
     }
 
-    .section__title {
-        font-size: 36px;
+    #quality .row {
+        flex-direction: column-reverse;
     }
 
-    img {
-        width: 88%;
+    .quality__description {
+        width: 100%;
+        margin-top: 60px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #values .row {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .values__img {
+        width: 60%;
+        padding: 0 0 50px;
+    }
+
+    .values__description {
+        padding: 0;
+        width: 80%;
+    }
+
+    .values__list {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    .value:nth-of-type(1) {
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .section__title {
+        font-size: 36px;
     }
 
     .steps__description {
         padding: 32px 24px;
     }
 
+    .testimonial__img {
+        width: 100px;
+        height: 100px;
+    }
+
     .testimonials__img {
-        width: 42%;
+        width: 100%;
+    }
+
+    #testimonials .row {
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .testimonial__bottom {
+        justify-content: space-around;
+    }
+
+    .testimonials__description {
+        text-align: center;
+        padding-left: 0;
     }
 
     .start__title {
